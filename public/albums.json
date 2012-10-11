@@ -1,0 +1,92 @@
+[{
+    "title": "Tones of Town",
+    "artist": "Field Music",
+    "tracks": [{
+        "title": "Give It Lose It Take It",
+        "url": "/music/blue.mp3"
+    },
+    {
+        "title": "Sit Tight",
+        "url": "/music/jazz.mp3"
+    },
+    {
+        "title": "Tones Of Town",
+        "url": "/music/minimalish.mp3"
+    },
+    {
+        "title": "A House Is Not A Home",
+        "url": "/music/slower.mp3"
+    },
+    {
+        "title": "Kingston",
+        "url": "/music/blue.mp3"
+    },
+    {
+        "title": "Working To Work",
+        "url": "/music/jazz.mp3"
+    },
+    {
+        "title": "In Context",
+        "url": "/music/minimalish.mp3"
+    },
+    {
+        "title": "A Gap Has Appeared",
+        "url": "/music/slower.mp3"
+    },
+    {
+        "title": "Closer At Hand",
+        "url": "/music/blue.mp3"
+    },
+    {
+        "title": "Place Yourself",
+        "url": "/music/jazz.mp3"
+    },
+    {
+        "title": "She Can Do What She Wants",
+        "url": "/music/minimalish.mp3"
+    }]
+},
+{
+    "title": "Chutes Too Narrow",
+    "artist": "The Shins",
+    "tracks": [{
+        "title": "Kissing the Lipless",
+        "url": "/music/blue.mp3"
+    },
+    {
+        "title": "Mine's Not a High Horse",
+        "url": "/music/jazz.mp3"
+    },
+    {
+        "title": "So Says I",
+        "url": "/music/minimalish.mp3"
+    },
+    {
+        "title": "Young Pilgrims",
+        "url": "/music/minimalish.mp3"
+    },
+    {
+        "title": "Saint Simon",
+        "url": "/music/minimalish.mp3"
+    },
+    {
+        "title": "Fighting in a Sack",
+        "url": "/music/minimalish.mp3"
+    },
+    {
+        "title": "Pink Bullets",
+        "url": "/music/minimalish.mp3"
+    },
+    {
+        "title": "Turn a Square",
+        "url": "/music/minimalish.mp3"
+    },
+    {
+        "title": "Gone for Good (A Call to Apathy)",
+        "url": "/music/minimalish.mp3"
+    },
+    {
+        "title": "Those to Come",
+        "url": "/music/slower.mp3"
+    }]
+}]
