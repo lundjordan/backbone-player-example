@@ -7,6 +7,8 @@ Tunes.Albums = Backbone.Collection.extend({
     url: '/albums',
 });
 
+Tunes.library = new Tunes.Albums();
+
 Tunes.AlbumView = Backbone.View.extend({
 
     tagName: 'li',
@@ -44,11 +46,45 @@ Tunes.LibraryView = Backbone.View.extend({
         albums = this.$('.albums');
         collection.each(function(album) {
             view = new Tunes.LibraryAlbumView({model: album});
-            albums.append(view.render().el());
-        };
+            albums.append(view.render().el);
+        });
         return this;
 
     },
 
+});
+
+Tunes.Router = Backbone.Router.extend({
+
+    routes: {
+        '': 'home',
+        'blank': 'blank',
+    },
+
+    initialize: function() {
+        this.libraryView = new Tunes.LibraryView({
+            collection: Tunes.library
+        });
+    },
+
+    home: function() {
+        container = $('#container');
+        container.empty();
+        container.append(this.libraryView.render().el);
+    },
+
+    blank: function() {
+        container = $('#container');
+        container.empty();
+        container.text('blank');
+    },
 
 });
+
+$(function() {
+    Tunes.library.fetch();
+    Tunes.router = new Tunes.Router();
+    Backbone.history.start();
+});
+
+

@@ -26,13 +26,19 @@
     </script>
 
     <script type="text/template" id="album-template">
-      <span class="album-title"><%= title %></span>
-      <span class="artist-name"><%= artist %></span>
-      <ol class="tracks">
-        <% _.each(tracks, function(track) { %>
-          <li><%= track.title %></li>
-        <% }); %>
-      </ol>
+        <button class="queue add" type="submit">
+            <img src="/images/add.png" alt="add" />
+        </button>
+        <button class="queue remove" type="submit">
+            <img src="/images/remove.png" alt="" />
+        </button>
+        <span class="album-title"><%= title %></span>
+        <span class="artist-name"><%= artist %></span>
+        <ol class="tracks">
+            <% _.each(tracks, function(track) { %>
+                <li><%= track.title %></li>
+                <% }); %>
+        </ol>
     </script>
 
   </head>
