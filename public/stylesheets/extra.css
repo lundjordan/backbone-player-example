@@ -67,6 +67,7 @@ body {
 }
 
 .library {
+    float: left;
 }
 
 .library .album .queue.remove {

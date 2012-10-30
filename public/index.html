@@ -4,7 +4,8 @@
 <!--[if IE 7]>    <html lang="en" class="no-js ie7"> <![endif]-->
 <!--[if IE 8]>    <html lang="en" class="no-js ie8"> <![endif]-->
 <!--[if IE 9]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" class="no-js"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
 
@@ -19,26 +20,35 @@
     <script src="javascripts/application.js"></script>
 
     <script type="text/template" id="library-template">
+      <h1>Music Library</h1>
+      <ul class="albums"> </ul>
+    </script>
 
-        <h1>Music Library</h1>
-        <ul class="albums"> </ul>
-
+    <script type="text/template" charset="utf-8" id="playlist-template">
+      <h1>Playlist</h1>
+      <nav>
+        <button class="control play" type="submit">Play</button>
+        <button class="control pause" type="submit">Pause</button>
+        <button class="control prev" type="submit">Prev</button>
+        <button class="control next" type="submit">Next</button>
+      </nav>
+      <ul class="albums"> </ul>
     </script>
 
     <script type="text/template" id="album-template">
-        <button class="queue add" type="submit">
-            <img src="/images/add.png" alt="add" />
-        </button>
-        <button class="queue remove" type="submit">
-            <img src="/images/remove.png" alt="" />
-        </button>
-        <span class="album-title"><%= title %></span>
-        <span class="artist-name"><%= artist %></span>
-        <ol class="tracks">
-            <% _.each(tracks, function(track) { %>
-                <li><%= track.title %></li>
-                <% }); %>
-        </ol>
+      <button class="queue add" type="submit">
+        <img src="/images/add.png" alt="add" />
+      </button>
+      <button class="queue remove" type="submit">
+        <img src="/images/remove.png" alt="" />
+      </button>
+      <span class="album-title"><%= title %></span>
+      <span class="artist-name"><%= artist %></span>
+      <ol class="tracks">
+        <% _.each(tracks, function(track) { %>
+          <li><%= track.title %></li>
+          <% }); %>
+      </ol>
     </script>
 
   </head>
